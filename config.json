@@ -1,0 +1,164 @@
+{
+    "MasterFunction":{
+        "Enabled": true
+    },
+    "Items":{
+        "AllItemsExamined":{
+            "Enabled": true
+        },
+        "RealisticRecoil":{
+            "Enabled": true
+        },
+        "AllArmorsProtectStomach":{
+            "Enabled": false
+        },
+        "DisableSecuredContRestrictions":{
+            "Enabled": true
+        },
+        "AmmoStackMultiplier":{
+            "Enabled": true,
+            "Multi": 2
+        },
+        "HighCapMagsOnly2SlotsTall":{
+            "Enabled": true
+        },
+        "ChangeLootSpawnMultipliers":{
+            "Enabled": true,
+            "StaticLootMulti": 2.5,
+            "LooseLootMulti": 2.5
+        },
+        "NoKeyDurability":{
+            "Enabled": true
+        },
+        "BoughtItemsFIR":{
+            "Enabled": true
+        },
+        "NoArmorRepairDecay":{
+            "Enabled": true
+        },
+        "HelmetProtectsFullHead":{
+            "Enabled": false
+        },
+        "AllowArmoredRigsWithBodyArmor":{
+            "Enabled": true
+        },
+        "DisableRMTRestrictions":{
+            "Enabled": true
+        }
+    },
+    "Meds":{
+        "EditStimulantUseAmount":{
+            "Enabled": true,
+            "StimulantUseAmount": 3
+        },
+        "EditMedHealth":{
+            "Enabled": true,
+            "IFAK": 600,
+            "AFAK": 750,
+            "Salewa": 750,
+            "Grizzly": 5000,
+            "Car": 400,
+            "AI2": 250,
+            "CMS": 10,
+            "Surv12": 20,
+            "CALOKB": 5,
+            "Esmarch": 3,
+            "CAT": 3,
+            "Splint": 0,
+            "AluminumSplint": 5,
+            "Ibuprofen": 15,
+            "Analgin": 4,
+            "Augmentin": 5,
+            "Vaseline": 10,
+            "GoldenStar": 10,
+            "Bandage": 0,
+            "ArmyBandage": 2
+        }
+    },
+    "Hideout":{
+        "ChangeConstructionTime":{
+            "Enabled": true,
+            "ConstructionTime": 10
+        },
+        "NoLoyaltyLevelForConstruction":{
+            "Enabled": true
+        },
+        "ChangeProductionTime":{
+            "Enabled": true,
+            "ProductionTime": 10
+        }
+    },
+    "Traders":{
+        "RagfairMinLevelChange":{
+            "Enabled": true,
+            "MinLevel": 1
+        },
+        "DisableBSGBlacklist":{
+            "Enabled": true
+        },
+        "RagfairDurability":{
+            "Enabled": true,
+            "Minimum": 1,
+            "Maximum": 1,
+            "ConditionChance": 0
+        },
+        "Insurance":{
+            "Enabled": true,
+            "PraporMinReturnHour": 0,
+            "TherapistMinReturnHour": 0,
+            "PraporMaxReturnHour": 0,
+            "TherapistMaxReturnHour": 0
+        },
+        "AllClothesFree":{
+            "Enabled": true
+        },
+        "ClothesForBothSides":{
+            "Enabled": true
+        },
+        "InstantSellOffers":{
+            "Enabled": false
+        },
+        "NoFleaSellFees":{
+            "Enabled": false
+        }
+    },
+    "Raid":{
+        "ReduceFoodAndHydroDegrade":{
+            "Enabled": true,
+            "EnergyDecay": 1.6,
+            "HydroDecay": 1.2
+        },
+        "CustomRaidTime":{
+            "Enabled": false,
+            "TimeInMinutes": 1440
+        },
+        "SetPreRaidSettings":{
+            "Enabled": false,
+            "AIAmount": "AsOnline",
+            "AIDifficulty": "AsOnline",
+            "EnableBosses": true,
+            "ScavWar": false,
+            "TaggedAndCursed": false
+        },
+        "NoPlayerScavTimer":{
+            "Enabled": true
+        },
+        "ChangeAirdropValues":{
+            "Enabled": false,
+            "Customs": 20,
+            "Woods": 20,
+            "Lighthouse": 20,
+            "Interchange": 20,
+            "Shoreline": 20,
+            "Reserve": 20,
+            "PlaneVolume": 100,
+            "MinStartTimeSeconds": 10,
+            "MaxStartTimeSeconds": 20
+        }
+    },
+    "Bots":{
+        "PMCFriendlyToSameFaction":{
+            "Enabled": true
+        }
+    }
+}
