@@ -4,13 +4,13 @@ import { DatabaseServer } from "@spt-aki/servers/DatabaseServer";
 import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
 import { ConfigServer } from "@spt-aki/servers/ConfigServer";
 import { ConfigTypes } from "@spt-aki/models/enums/ConfigTypes";
-import { IBotConfig } from "@spt-aki/models/spt/config/IBotConfig";
 import { IAirdropConfig } from "@spt-aki/models/spt/config/IAirdropConfig";
 import { IInRaidConfig } from "@spt-aki/models/spt/config/IInRaidConfig";
 import { IInventoryConfig } from "@spt-aki/models/spt/config/IInventoryConfig";
 import { ILocationConfig } from "@spt-aki/models/spt/config/ILocationConfig";
 import { IRagfairConfig } from "@spt-aki/models/spt/config/IRagfairConfig";
 import { IItemConfig } from "@spt-aki/models/spt/config/IItemConfig";
+import { IPmcConfig } from "@spt-aki/models/spt/config/IPmcConfig";
 
 class aio implements IPostDBLoadMod
 {
@@ -31,7 +31,7 @@ class aio implements IPostDBLoadMod
         const RagfairConfig = configServer.getConfig<IRagfairConfig>(ConfigTypes.RAGFAIR);
         const AirdropConfig = configServer.getConfig<IAirdropConfig>(ConfigTypes.AIRDROP);
         const InventoryConfig = configServer.getConfig<IInventoryConfig>(ConfigTypes.INVENTORY);
-        const BotConfig = configServer.getConfig<IBotConfig>(ConfigTypes.BOT);
+        const PmcConfig = configServer.getConfig<IPmcConfig>(ConfigTypes.PMC);
         const ItemConfig = configServer.getConfig<IItemConfig>(ConfigTypes.ITEM);
     
         const randomMessageArray = ["that other AIO", "pornhub.com", "intentional lag machines", "your mother lmao", "an AR-15", "that one mod, you know the one", "the homework folder", "pictures of my cat (she's cute)"];
@@ -133,7 +133,7 @@ class aio implements IPostDBLoadMod
                 Logger.info("[K-AIO] You can now wear rigs with body armor");
 
             if (config.Bots.PMCFriendlyToSameFaction.Enabled) {
-                BotConfig.pmc.chanceSameSideIsHostilePercent = 0; // Make all same-side PMCs friendly by making random chance of being hostile to same faction equal 0
+                PmcConfig.chanceSameSideIsHostilePercent = 0; // Make all same-side PMCs friendly by making random chance of being hostile to same faction equal 0
                 Logger.info("[K-AIO] All PMCs are now friendly to faction members");
             }
 
